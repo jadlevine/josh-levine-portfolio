@@ -2,7 +2,7 @@ body{
   text-align: center;
   margin: 0;
   background-color: rgb(34, 34, 34);
-  color:azure;
+  color:white;
   
   /* background: rgba(0, 0, 0, 0.2)
   url("https://images.unsplash.com/photo-1497633762265-9d179a990aa6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80");
@@ -12,11 +12,21 @@ body{
    object-position: center center; */
 }
 
-.nav{
+/* testing */
+.bgp{
+  background-color: rgb(100,0,100);
+}
+
+#headshot{
+  width: 100px;
+}
+
+.header{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: rgb(100, 100, 100);
+  /* background-color: rgb(100, 100, 100); */
+  background-color: rgb(100,0,0);
   align-items: center;
   /* font-size: 20px; */
   padding: 1em;
@@ -28,9 +38,19 @@ body{
   width: 90vw;
   font-size: 30px;
 }
-#headshot{
-  width: 100px;
+.nav-option{
+  color: red;
+  text-decoration: none;
+  font-weight: bold;
 }
+.nav-option:hover{
+  color: white;
+}
+.currentPath{
+  color: blue;
+  font-size: larger;
+}
+
 
 .projects-container{
   display: flex;
@@ -71,12 +91,30 @@ border-radius: 20px;
 .link-out{
   font-size:x-large;
   font-weight: bold;
-  color: azure;
+  color:white;
 }
 .divider{
   margin: 0 0.5em;
 }
 
+.icon{
+  color: white;
+  font-size:80px;
+  margin: 10px 40px;
+}
+.icon:hover{
+  color: red;
+}
+
+
 #footer{
-  background-color: rgb(100, 100, 100);
+  /* background-color: rgb(100, 100, 100); */
+  background-color: rgb(100,0,0);
+}
+.contact-row{
+  display:flex;
+  justify-content: center;
+}
+.contact-icon{
+  /* margin: 10px 40px; */
 }

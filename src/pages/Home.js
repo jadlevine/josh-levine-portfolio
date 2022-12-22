@@ -1,17 +1,23 @@
-import { Link } from 'react-router-dom'
-
-import headshot from '../assets/JoshLevine.jpg'
-
-//from michaellackey.com
-// Experience in:
-// ReactJS/Redux, Python3/Django, Node.js/Express, AWS S3, PostgreSQL/Sequelize, MongoDB/Mongoose, Heroku/Netlify/Surge, Git/GitHub, HTML5, CSS3, JavaScript and much more....
-
-// AND a mosaic of icons of tech used?
-
 const Home = () => {
   return (
     <div>
-      <h1>Home...image?</h1>
+      <h1>Software Engineer</h1>
+      <h2>Columbus, OH</h2>
+      <div id="about-me-info">
+        <h2>I am a software engineer who is driven by a challange.</h2>
+        <h2>
+          Previously, as an educator, I created environments where teams and
+          their members could be successful.
+        </h2>
+        <h2>
+          Whether building applications, or playing board-games, my greatest
+          satisfaction is solving complex problems.
+        </h2>
+        <h2>
+          I thrive in collaborative environments where shared vision, curiosity,
+          and continuous improvement are prioritized.
+        </h2>
+      </div>
     </div>
   )
 }

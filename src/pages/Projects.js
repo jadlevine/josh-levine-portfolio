@@ -1,10 +1,7 @@
-// import React from 'react'
 import projectImage from '../assets/projectIcon.png'
 import TttImg from '../assets/TttImg.png'
 import FskImg from '../assets/FskImg.png'
 import SkImg from '../assets/SkImg.png'
-// import headerFSK from '../assets/header_FSK.png'
-// import headerSK from '../assets/header_SK.png'
 import { Link } from 'react-router-dom'
 
 const Projects = () => {
@@ -31,7 +28,7 @@ const Projects = () => {
       github: 'https://github.com/jadlevine/seq-keeper',
       deployed: 'https://seq-keeper.herokuapp.com/',
       description:
-        'A Full-Stack PERN applicaiton that integrates the searching capabilities of the NCBI and allows users to catalog gene and FASTA sequence data'
+        'A Full-Stack PERN applicaiton that integrates the searching capabilities of the NCBI and allows users to catalog gene and DNA/RNA sequence data'
     }
   ]
 
@@ -47,13 +44,13 @@ const Projects = () => {
               <p className="project-description">{project.description}</p>
             </div>
             <div className="link-row">
-              <Link className="link-out" to={project.github}>
+              <a href={project.github} className="link-out">
                 GitHub
-              </Link>
+              </a>
               <div className="link-out divider">|</div>
-              <Link className="link-out" to={project.deployed}>
+              <a href={project.deployed} className="link-out">
                 App
-              </Link>
+              </a>
             </div>
           </div>
         ))}
