@@ -33,7 +33,8 @@ const Projects = () => {
   ]
 
   return (
-    <div>
+    <div className="page-body">
+      <div className="page-body-top"></div>
       <h1>Projects</h1>
       <div className="projects-container">
         {projectsList.map((project) => (
@@ -44,17 +45,18 @@ const Projects = () => {
               <p className="project-description">{project.description}</p>
             </div>
             <div className="link-row">
-              <a href={project.github} className="link-out">
+              <a href={project.github} className="link-out clickable">
                 GitHub
               </a>
               <div className="link-out divider">|</div>
-              <a href={project.deployed} className="link-out">
+              <a href={project.deployed} className="link-out clickable">
                 App
               </a>
             </div>
           </div>
         ))}
       </div>
+      <div className="page-body-bottom"></div>
     </div>
   )
 }

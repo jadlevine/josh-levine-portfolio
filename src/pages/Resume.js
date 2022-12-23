@@ -8,12 +8,20 @@ import AllPagesPDFViewer from '../components/all-pages'
 import resume from '../assets/Josh-Levine-Resume.pdf'
 
 const Resume = () => {
-  // useEffect(() => {
-  //   pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`
-  // }, [])
+  /**
+   * YOU ARE HERE
+   *
+   * RESUME is viewable as PDF
+   * need to style it up
+   * decide on single page or all page view
+   * add download options for ATS friendly AND with hyperlinks
+   *
+   * Make hyperlinks work in pdf??
+   * */
 
   return (
-    <div>
+    <div className="page-body">
+      <div className="page-body-top"></div>
       <h1>Resume</h1>
       <h4>Single Page</h4>
       <SinglePagePDFViewer pdf={resume} />
@@ -38,6 +46,7 @@ const Resume = () => {
         size="3x"
         // transform="grow-2"
       ></FontAwesomeIcon>
+      <div className="page-body-bottom"></div>
     </div>
   )
 }
