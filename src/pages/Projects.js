@@ -35,7 +35,6 @@ const Projects = () => {
   return (
     <div className="page-body">
       <div className="page-body-top"></div>
-      <h1>Projects</h1>
       <div className="projects-container">
         {projectsList.map((project) => (
           <div key={project.name} className="project-card">

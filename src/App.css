@@ -198,25 +198,55 @@ border-radius: 20px;
   font-family: Special Elite, Monaco;
 }
 
+/* RESUME */
+.resume-download{
+  font-family: Catamaran, Monaco;
+  font-size: 2rem;
+  margin: 1rem;
+}
+.resume-download:hover{
+  cursor: pointer;
+}
+
 /* For pdf */
 .react-pdf__Page {
-  margin-top: 10px;
-}
-.react-pdf__Page__textContent {
-  border: 1px solid darkgrey;
-  box-shadow: 5px 5px 5px 1px #ccc;
-  border-radius: 5px;
+  margin: 1rem;
+  /* max-width: 90vw; */
+  /* background-color: brown; */
 }
 
-.react-pdf__Page__annotations.annotationLayer {
-  padding: 20px;
+.react-pdf__Page__textContent {
+  /* background-color: brown; */
+  /* width: 90vw; */
+  /* border: 1px solid darkgrey; */
+  /* box-shadow: 5px 5px 5px 1px #ccc; */
+  /* border-radius: 5px; */
 }
+
+/* .react-pdf__Page__annotations.annotationLayer {
+  padding: 20px;
+} */
 
 .react-pdf__Page__canvas {
+  /* background-color: red; */
   margin: 0 auto;
 }
 
-button {
+/* For all pages */
+.all-page-container {
+  /* background-color: brown; */
+  /* width: 100%; */
+  /* height: 100%; */
+  /* max-height: 500px; */
+  overflow: auto;
+}
+
+/* .resume-pdf{
+  width: 90vw;
+} */
+
+/* only necessary for single page view */
+/* button {
   margin-right: 10px;
   background: #3f51b5;
   color: white;
@@ -225,4 +255,4 @@ button {
   width: 100px;
   cursor: pointer;
   box-shadow: 2px 2px 2px 1px #ccc;
-}
+} */

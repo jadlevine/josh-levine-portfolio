@@ -8,44 +8,49 @@ import AllPagesPDFViewer from '../components/all-pages'
 import resume from '../assets/Josh-Levine-Resume.pdf'
 
 const Resume = () => {
-  /**
-   * YOU ARE HERE
-   *
-   * RESUME is viewable as PDF
-   * need to style it up
-   * decide on single page or all page view
-   * add download options for ATS friendly AND with hyperlinks
-   *
-   * Make hyperlinks work in pdf??
-   * */
+  const downloadResume = () => {
+    fetch(resume).then((response) => {
+      response.blob().then((blob) => {
+        // Creating new object of PDF file
+        const fileURL = window.URL.createObjectURL(blob)
+        // Setting various property values
+        let alink = document.createElement('a')
+        alink.href = fileURL
+        alink.download = resume
+        alink.click()
+      })
+    })
+  }
 
   return (
     <div className="page-body">
       <div className="page-body-top"></div>
-      <h1>Resume</h1>
-      <h4>Single Page</h4>
-      <SinglePagePDFViewer pdf={resume} />
+      <div className="resume-download" onClick={downloadResume}>
+        Download a copy:{' '}
+        <FontAwesomeIcon
+          icon={faDownload}
+          // className="icon"
+          size="2x"
+        ></FontAwesomeIcon>
+      </div>
 
-      <hr />
+      {/* <h4>Single Page</h4> */}
+      {/* <SinglePagePDFViewer pdf={resume} /> */}
 
-      {/* <h4>All Pages</h4>
+      {/* <hr /> */}
+
+      {/* <h4>All Pages</h4> */}
       <div className="all-page-container">
-        <AllPagesPDFViewer pdf={resume} />
-      </div> */}
+        <AllPagesPDFViewer pdf={resume} className="resume-pdf" />
+      </div>
 
-      <hr />
+      {/* <hr /> */}
       {/* <Document file="https://drive.google.com/file/d/1P6SNlFOCujSXBSoM3cEA2iEWOYephMs3/view?usp=sharing"> */}
       {/* <Document file={resume}>
         <Page pageNumber={1} />
         <Page pageNumber={2} />
       </Document> */}
 
-      <FontAwesomeIcon
-        icon={faDownload}
-        className="icon"
-        size="3x"
-        // transform="grow-2"
-      ></FontAwesomeIcon>
       <div className="page-body-bottom"></div>
     </div>
   )
