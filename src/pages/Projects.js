@@ -44,11 +44,19 @@ const Projects = () => {
               <p className="project-description">{project.description}</p>
             </div>
             <div className="link-row">
-              <a href={project.github} className="link-out clickable">
+              <a
+                href={project.github}
+                className="link-out clickable"
+                target="_blank"
+              >
                 GitHub
               </a>
               <div className="link-out divider">|</div>
-              <a href={project.deployed} className="link-out clickable">
+              <a
+                href={project.deployed}
+                className="link-out clickable"
+                target="_blank"
+              >
                 App
               </a>
             </div>

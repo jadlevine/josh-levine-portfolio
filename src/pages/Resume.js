@@ -1,10 +1,9 @@
-import { useEffect } from 'react'
+// import { useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDownload } from '@fortawesome/free-solid-svg-icons'
 // import { Document, Page, pdfjs } from 'react-pdf'
-import SinglePagePDFViewer from '../components/single-page'
+// import SinglePagePDFViewer from '../components/single-page'
 import AllPagesPDFViewer from '../components/all-pages'
-
 import resume from '../assets/Josh-Levine-Resume.pdf'
 
 const Resume = () => {
@@ -25,31 +24,13 @@ const Resume = () => {
   return (
     <div className="page-body">
       <div className="page-body-top"></div>
-      <div className="resume-download" onClick={downloadResume}>
-        Download a copy:{' '}
-        <FontAwesomeIcon
-          icon={faDownload}
-          // className="icon"
-          size="2x"
-        ></FontAwesomeIcon>
+      <div className="resume-download clickable" onClick={downloadResume}>
+        Download a copy: <FontAwesomeIcon icon={faDownload}></FontAwesomeIcon>
       </div>
 
-      {/* <h4>Single Page</h4> */}
-      {/* <SinglePagePDFViewer pdf={resume} /> */}
-
-      {/* <hr /> */}
-
-      {/* <h4>All Pages</h4> */}
       <div className="all-page-container">
-        <AllPagesPDFViewer pdf={resume} className="resume-pdf" />
+        <AllPagesPDFViewer pdf={resume} />
       </div>
-
-      {/* <hr /> */}
-      {/* <Document file="https://drive.google.com/file/d/1P6SNlFOCujSXBSoM3cEA2iEWOYephMs3/view?usp=sharing"> */}
-      {/* <Document file={resume}>
-        <Page pageNumber={1} />
-        <Page pageNumber={2} />
-      </Document> */}
 
       <div className="page-body-bottom"></div>
     </div>

@@ -3,7 +3,7 @@ const About = () => {
     <div id="about-me-body" className="page-body">
       <div className="page-body-top"></div>
       <div id="about-me-info">
-        <div id="about-me-title">Software Engineer</div>
+        <div id="about-me-title">Software Engineer | Full-Stack Developer</div>
         <div id="about-me-location">Columbus, OH</div>
         <div className="about-me-text">
           I am a software engineer with a proven record in education and genomic
